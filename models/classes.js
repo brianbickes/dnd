@@ -21,6 +21,9 @@ const classesSchema = new Schema({
     saves: {
     type: String,
     default: true
+},
+    image: {
+    type: String
 }
 }, {
     timestamps: true

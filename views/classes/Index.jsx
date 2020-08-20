@@ -5,7 +5,8 @@ class Index extends React.Component {
             {
                 this.props.classes.map((classes) => {
                     return (<li key={classes._id}>
-                        <h1>{classes.title}</h1>
+                        <span><img src={classes.image} className="Image" height="300px" width="35%" /></span><br/>
+                        <h1><a href={`/classes/${classes._id}`}>{classes.title}</a></h1>
                         <p>{classes.description}</p>
                         <p>{classes.hitDie}</p>
                         <p>{classes.primaryAbility}</p>

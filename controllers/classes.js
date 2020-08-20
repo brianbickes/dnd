@@ -65,7 +65,7 @@ ClassesRouter.post('/', (req, res) => {
 
 //EDIT
 ClassesRouter.get('/:id/edit', (req, res) => {
-    Log.findById(req.params.id, (error, foundClass) => {
+    Classes.findById(req.params.id, (error, foundClass) => {
         if (error) {
             res.status(500).send({
                 error: error.message
@@ -80,7 +80,7 @@ ClassesRouter.get('/:id/edit', (req, res) => {
 
 //SHOW
 ClassesRouter.get('/:id', (req, res) => {
-    Fruit.findById(req.params.id, (error, foundClass) => {
+    Classes.findById(req.params.id, (error, foundClass) => {
         res.render('classes/Show', {
             classes: foundClass
         });
