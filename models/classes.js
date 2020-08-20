@@ -18,7 +18,7 @@ const classesSchema = new Schema({
         type: String,
         required: true
     },
-    Saves: {
+    saves: {
     type: String,
     default: true
 }
@@ -28,4 +28,5 @@ const classesSchema = new Schema({
 
 const Classes = mongoose.model('Classes', classesSchema);
 
+//EXPORT ROUTER
 module.exports = Classes; 

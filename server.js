@@ -28,7 +28,9 @@ app.engine('jsx', createEngine()); // V
 app.use(methodOverride('_method')); 
 //END MIDDLEWARE
 
-
+//CONTROLLERS
+const classesController = require('./controllers/classes.js');
+app.use('/classes', classesController); 
 
 
 
