@@ -1,8 +1,8 @@
 //DEPENDENCIES
-const express = require('express');
+const express = require('express'); //C
 const mongoose = require('mongoose');
 const methodOverride = require('method-override');
-const app = express();
+const app = express(); //C
 const reactViews = require('express-react-views'); // V
 const createEngine = reactViews.createEngine; // V
 const PORT = 3000; 
@@ -32,7 +32,18 @@ app.use(methodOverride('_method'));
 
 
 
+//STATIC PAGES
 
+app.get('/', (req, res) => {
+    res.render('static/Home')
+});
+
+app.get('/about', (req, res) => {
+    res.render('static/About') 
+})
+app.get('/contact-us', (req, res) => {
+    res.render('static/ContactUs')
+});
 
 //LISTENER
 app.listen(PORT, ()=>{
