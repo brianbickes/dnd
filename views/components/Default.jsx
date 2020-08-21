@@ -10,12 +10,14 @@ class Default extends React.Component {
                     <title>Dungeons and Dragons</title>
                 </head>
                 <body>
+                <img class="titleImage" src="https://i.imgur.com/73abYGq.png" height="230" width="100%"></img>
                     <nav class="navBar">
-                        <a href="/">Home</a>
+                        <a class="nav" href="/">Home</a>
                         <a href="/classes">Classes</a>
                         <a href="/races">Races</a>
                         <a href="/classes/new">Create</a>
                     </nav>
+                    
                     {this.props.children}
                     <footer>
 
