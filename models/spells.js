@@ -6,18 +6,21 @@ const spellsSchema = new Schema({
         type: String,
         required: true
     },
-    description: {
-        type: String,
-        required: true
-    },
     level: {
         type: String,
         required: true
     },
+    description: {
+        type: String,
+        required: true
+    },
     range: {
-    type: Number,
-    default: true
-}
+        type: Number,
+        default: true
+    },
+    image: {
+        type: String
+    }
 }, {
     timestamps: true
 });

@@ -6,11 +6,19 @@ const equipmentSchema = new Schema({
         type: String,
         required: true
     },
+    type: {
+        type: Number,
+        required: true
+    },
     description: {
         type: String,
         required: true
     },
     cost: {
+        type: Number,
+        required: true
+    },
+    weight: {
         type: Number,
         required: true
     },

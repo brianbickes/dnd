@@ -6,12 +6,12 @@ class Show extends React.Component {
         const { title, description, traits, image, _id } = this.props.races;
         return (
             <Default>
-                <div>
-                    <h1>{title}</h1>
+                <div class="container">
+                    <h1 class="descriptor">{title}</h1>
                     <img src={image} className="Image" height="300px" width="35%" /><br />
-                    <h3> Race Description</h3>
+                    <h3 class="descriptor"> Race Description</h3>
                     <p>{description}</p>
-                    <h3>Racial Traits</h3>
+                    <h3 class="descriptor">Racial Traits</h3>
                     <p>{traits}</p>
                     <a href={`/races/${_id}/edit`}>Edit</a>
                     {/* <form action={`/classes/${_id}/?_method=DELETE`} method="POST">

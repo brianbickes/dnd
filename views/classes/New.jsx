@@ -5,7 +5,7 @@ class New extends React.Component {
     render(){
         return (
             <Default>
-            <div>
+            <div class="newClass">
                 <h1>New Class Page</h1>
                 <form action="/classes" method="POST">
                     

@@ -22,12 +22,22 @@ mongoose.connection.once('open', () => {
 });
 
 //CONTROLLERS
+
+//CLASSES
 const classesController = require('./controllers/classes.js');
 app.use('/classes', classesController); 
 
+//RACES
 const racesController = require('./controllers/races.js');
 app.use('/races', racesController); 
 
+//SPELLS
+const spellsController = require('./controllers/spells.js');
+app.use('/spells', spellsController); 
+
+//EQUIPMENT
+const equipmentController = require('./controllers/equipment.js');
+app.use('/equipment', equipmentController); 
 
 
 //STATIC PAGES
