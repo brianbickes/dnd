@@ -1,8 +1,10 @@
 const React = require('react');
+const Default = require('../components/Default');
 
 class New extends React.Component {
     render(){
         return (
+            <Default>
             <div>
                 <h1>New Class Page</h1>
                 <form action="/classes" method="POST">
@@ -15,6 +17,7 @@ class New extends React.Component {
                     <input type="submit" value="Create Class"></input>
                 </form>
             </div>
+            </Default>
         )
     }
 };
