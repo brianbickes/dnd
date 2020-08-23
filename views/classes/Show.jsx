@@ -6,9 +6,9 @@ class Show extends React.Component {
         const { title, description, hitDie, primaryAbility, image, _id } = this.props.classes;
         return (
             <Default>
-                <div>
+                <div class="showClass">
                     <h1>{title}</h1>
-                    <img src={image} className="Image" height="300px" width="35%" /><br />
+                    <img src={image} className="Image" height="300px" width="200px" /><br />
                     <h3> Character Description</h3>
                     <p>{description}</p>
                     <h3>Hit Die</h3>
@@ -19,6 +19,7 @@ class Show extends React.Component {
                     {/* <form action={`/classes/${_id}/?_method=DELETE`} method="POST">
                             <input type="submit" value="Delete This Class" /> 
                         </form> */}
+                        {this.props.children}
                 </div>
             </Default>
         )

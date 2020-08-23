@@ -18,6 +18,7 @@ body {
     border-radius: 20%; 
 };
 
+
 /*INDEX*/
 .indexClass {
     display: inline-flex;
@@ -27,4 +28,24 @@ body {
     align-items: center;
     margin: 10px;
     padding: 10px;
+}
+
+.spellIndex {
+    display: inline-flex;
+    flex-basis: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px 10px 20px ;
+    padding: 10px 30px 10px 30px;
+}
+
+showClass {
+    display: inline-flex;
+    flex-basis: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px 10px 20px ;
+    padding: 10px 30px 10px 30px;
 }

@@ -17,7 +17,8 @@ class Default extends React.Component {
                         <a href="/races">Races</a>
                         <a href="/spells">Spells</a>
                         <a href="/equipment">Equipment</a>
-                        <a href="/classes/new">Create</a>
+                        <a href="/spells/new">Create</a>
+                        <a href="/createcharacter/new">Create your own Character</a>
                     </nav>
                     
                     {this.props.children}

@@ -10,7 +10,7 @@ class Index extends React.Component {
                         this.props.races.map((races) => {
                             return (
                             <div key={races._id}>
-                                <span><img src={races.image} className="Image" height="300px" width="35%" /></span><br />
+                                <span><img src={races.image} className="Image" height="300px" width="200px" /></span><br />
                                 <h1><a href={`/races/${races._id}`}>{races.title}</a></h1>
                                 {/* <h3> Character Description</h3>
                         <p>{classes.description}</p>

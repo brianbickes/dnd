@@ -9,9 +9,11 @@ class Index extends React.Component {
                     {
                         this.props.spells.map((spells) => {
                             return (
+                                <div class="spellIndex">
                             <div key={spells._id}>
-                                <span><img src={spells.image} className="Image" height="300px" width="35%" /></span><br />
+                                <span><img src={spells.image} className="Image" height="100px" width="100px" /></span><br />
                                 <h1><a href={`/spells/${spells._id}`}>{spells.title}</a></h1>
+                                <h2>{spells.level}</h2>
                                 {/* <h3> Character Description</h3>
                         <p>{classes.description}</p>
                         <h3>Hit Die</h3>
@@ -22,6 +24,8 @@ class Index extends React.Component {
                                 {/* <form action={`/classes/${classes._id}/?_method=DELETE`} method="POST">
                             <input type="submit" value="Delete This Class" /> 
                         </form> */}
+                        {this.props.children}
+                            </div>
                             </div>
                             )
                         })

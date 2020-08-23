@@ -3,20 +3,25 @@ const Default = require('../components/Default');
 
 class Show extends React.Component {
     render() {
-        const { title, description, traits, image, _id } = this.props.races;
+        const { userclass, description, race, spells, equipment, image, _id } = this.props.createcharacter;
         return (
             <Default>
-                <div class="container">
-                    <h1 class="descriptor">{title}</h1>
+                <div class="showCreateCharacter">
+                    <h1>{userclass}</h1>
                     <img src={image} className="Image" height="300px" width="200px" /><br />
-                    <h3 class="descriptor"> Race Description</h3>
+                    <h3> Character Description</h3>
                     <p>{description}</p>
-                    <h3 class="descriptor">Racial Traits</h3>
-                    <p>{traits}</p>
-                    <a href={`/races/${_id}/edit`}>Edit</a>
+                    <h3>Race</h3>
+                    <p>{race}</p>
+                    <h3>Spells</h3>
+                    <p>{spells}</p>
+                    <h3>Equipment</h3>
+                    <p>{equipment}</p>
+                    <a href={`/classes/${_id}/edit`}>Edit</a>
                     {/* <form action={`/classes/${_id}/?_method=DELETE`} method="POST">
                             <input type="submit" value="Delete This Class" /> 
                         </form> */}
+                        {this.props.children}
                 </div>
             </Default>
         )

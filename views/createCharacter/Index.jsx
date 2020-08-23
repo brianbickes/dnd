@@ -7,12 +7,12 @@ class Index extends React.Component {
             <Default>
                 
                     {
-                        this.props.classes.map((classes) => {
+                        this.props.createcharacter.map((createCharacter) => {
                             return (
-                                <div key={classes._id}>
-                                    <div class="indexClass">
-                                        <span><img src={classes.image} className="Image" height="300px" width="200px" /></span><br />
-                                        <h1><a href={`/classes/${classes._id}`}>{classes.title}</a></h1>
+                                <div key={createCharacter._id}>
+                                    <div class="createCharacterClass">
+                                        <span><img src={createCharacter.image} className="Image" height="300px" width="200px" /></span><br />
+                                        <h1><a href={`/createcharacter/${createCharacter._id}`}>{createCharacter.userclass}</a></h1>
                                     </div>
                                     {this.props.children}
                                     {/* <h3> Character Description</h3>

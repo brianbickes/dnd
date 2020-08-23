@@ -8,7 +8,7 @@ class Show extends React.Component {
             <Default>
                 <div class="container">
                     <h1 class="descriptor">{title}</h1>
-                    <img src={image} className="Image" height="300px" width="35%" /><br />
+                    <img src={image} className="Image" height="100px" width="100px" /><br />
                     <h3 class="level">Spell Level</h3>
                     <p>{level}</p>
                     <h3 class="descriptor"> Spell Description</h3>

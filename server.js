@@ -39,6 +39,10 @@ app.use('/spells', spellsController);
 const equipmentController = require('./controllers/equipment.js');
 app.use('/equipment', equipmentController); 
 
+//CREATE CHARACTER
+const createCharacterController = require('./controllers/createCharacter.js');
+app.use('/createcharacter', createCharacterController); 
+
 
 //STATIC PAGES
 

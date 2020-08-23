@@ -15,7 +15,7 @@ const spellsSchema = new Schema({
         required: true
     },
     range: {
-        type: Number,
+        type: String,
         default: true
     },
     image: {
