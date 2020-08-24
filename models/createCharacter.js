@@ -10,7 +10,15 @@ const createcharacterSchema = new Schema({
         type: String,
         required: true
     },
-    spells: {
+    cantrip1: {
+        type: String,
+        required: true
+    },
+    cantrip2: {
+        type: String,
+        required: true
+    },
+    firstlevelspell: {
         type: String,
         required: true
     },
@@ -19,6 +27,10 @@ const createcharacterSchema = new Schema({
         required: true
     },
     description: {
+    type: String,
+    default: true
+},
+username: {
     type: String,
     default: true
 },

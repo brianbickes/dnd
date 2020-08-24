@@ -49,3 +49,47 @@ showClass {
     margin: 10px 20px 10px 20px ;
     padding: 10px 30px 10px 30px;
 }
+
+/*DROPDOWN MENU*/
+.dropbtn {
+    background-color: rgb(114, 114, 114);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 12%;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    display: block;
+    color: black;
+    padding: 12px 12px ;
+    text-decoration: none;
+
+  }
+  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropbtn {background-color: rgb(114, 114, 114);}
+
+
+  /*NEW CHARACTER CREATOR*/
+  textarea {
+      resize: none;
+      height: 150px;
+      width: 500px;
+  }

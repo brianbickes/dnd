@@ -25,7 +25,7 @@ class New extends React.Component {
                                 <option value="Wizard">Wizard</option>
                             </optgroup>
                         </select><br />
-                        <label HTMLFor="description">Backstory</label><input type="text" name="description" id="description"></input><br />
+                        <label HTMLFor="description">Backstory</label><textarea type="text" name="description" id="description"></textarea><br />
                         <label HTMLFor="race">Race</label><select name="race" id="race">
                             <optgroup label="race">
                                 <option value="Aarakocra">Aarakocra</option>
@@ -42,8 +42,8 @@ class New extends React.Component {
                                 <option href="races/5f3f246b75c5d03f81420cc6" value="Tiefling">Tiefling</option>  /**/ 
                             </optgroup>
                         </select><br />
-                        <label HTMLFor="spells">Cantrip 1st selection</label><select name="spells" id="spells">
-                            <optgroup label="spells">
+                        <label HTMLFor="cantrip1">Cantrip 1st selection</label><select name="cantrip1" id="cantrip1">
+                            <optgroup label="cantrip1">
                                 <option value="Acid Splash">Acid Splash</option>
                                 <option value="Chill Touch">Chill Touch</option>
                                 <option value="Dancing Lights">Dancing Lights</option>
@@ -70,8 +70,36 @@ class New extends React.Component {
                                 <option value="Viscious Mockery">Viscious Mockery</option>
                             </optgroup>
                         </select><br />
-                        <label HTMLFor="spells">Cantrip 2nd selection</label><select name="spells" id="spells">
-                            <optgroup label="spells">
+                        <label HTMLFor="cantrip2">Cantrip 2nd selection</label><select name="cantrip2" id="cantrip2">
+                            <optgroup label="cantrip2">
+                                <option value="Acid Splash">Acid Splash</option>
+                                <option value="Chill Touch">Chill Touch</option>
+                                <option value="Dancing Lights">Dancing Lights</option>
+                                <option value="Druidcraft">Druifcraft</option>
+                                <option value="Eldritch Blast">Eldritch Blast</option>
+                                <option value="Fire Bolt">Fire Bolt</option>
+                                <option value="Guidance">Guidance</option>
+                                <option value="Light">Light</option>
+                                <option value="Mage Hand">Mage Hand</option>
+                                <option value="Mending">Mending</option>
+                                <option value="Message">Message</option>
+                                <option value="Minor Illusion">Minor Illusion</option>
+                                <option value="Poison Spray">Poison Spray</option>
+                                <option value="Prestidigitation">Prestidigitation</option>
+                                <option value="Produce Flame">Produce Flame</option>
+                                <option value="Ray of Frost">Ray of Frost</option>
+                                <option value="Resistance">Resistance</option>
+                                <option value="Sacred Flame">Sacred Flame</option>
+                                <option value="Shillelagh">Shillelagh</option>
+                                <option value="Shocking Grasp">Shocking Grasp</option>
+                                <option value="Spare the Dying">Spare the Dying</option>
+                                <option value="Thaumaturgy">Thaumaturgy</option>
+                                <option value="True Strike">True Strike</option>
+                                <option value="Viscious Mockery">Viscious Mockery</option>
+                            </optgroup>
+                        </select><br />
+                        <label HTMLFor="firstlevelspell">First Level Spell</label><select name="firstlevelspell" id="firstlevelspell">
+                            <optgroup label="firstlevelspell">
                                 <option value="Acid Splash">Acid Splash</option>
                                 <option value="Chill Touch">Chill Touch</option>
                                 <option value="Dancing Lights">Dancing Lights</option>
@@ -100,6 +128,7 @@ class New extends React.Component {
                         </select><br />
                         <label HTMLFor="equipment">Equipment</label><input type="text" name="equipment" id="equipment"></input><br />
                         <label HTMLFor="image">Image</label><input type="text" name="text" id="image"></input><br />
+                        <label HTMLFor="username">Your name</label><input type="text" name="username" id="username" default="Enter your name here"></input><br />
                         <input type="submit" value="Create Class"></input>
                     </form>
                 </div>
