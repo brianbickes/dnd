@@ -6,14 +6,15 @@ class New extends React.Component {
         return (
             <Default>
                 <div>
-                    <h1>New Equipment Page</h1>
+                    <h1>New Weapon Page</h1>
                     <form action="/equipment" method="POST">
 
                     <label HTMLFor="title">Equipment Name</label><input type="text" name="title" id="title"></input><br/>
                     <label HTMLFor="type">Equipment Type</label><input type="text" name="type" id="type"></input><br/>
                     <label HTMLFor="description">Description</label><input type="text" name="description" id="description"></input><br/>
-                    <label HTMLFor="cost">Cost</label><input type="text" name="cost" id="cost"></input><br/>
-                    <label HTMLFor="weight">Weight</label><input type="text" name="text" id="weight"></input><br/>
+                    <label HTMLFor="damage">Damage</label><input type="text" name="damage" id="damage"></input><br/>
+                
+                    <label HTMLFor="image">Image</label><input type="text" name="text" id="image"></input><br/>
                         <input type="submit" value="Create New Equipment"></input>
                     </form>
                 </div>

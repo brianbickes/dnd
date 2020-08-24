@@ -11,8 +11,9 @@ class Index extends React.Component {
                             return (
                                 <div key={createCharacter._id}>
                                     <div class="createCharacterClass">
-                                        <span><img src={createCharacter.image} className="Image" height="300px" width="200px" /></span><br />
+                                        <span><img src={createCharacter.image} className="Image" height="300px" width="30%" /></span><br />
                                         <h1><a href={`/createcharacter/${createCharacter._id}`}>{createCharacter.userclass}</a></h1>
+                            <h2>Created by {createCharacter.username}</h2>
                                     </div>
                                     {this.props.children}
                                     {/* <h3> Character Description</h3>

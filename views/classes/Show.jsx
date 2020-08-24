@@ -8,7 +8,7 @@ class Show extends React.Component {
             <Default>
                 <div class="showClass">
                     <h1>{title}</h1>
-                    <img src={image} className="Image" height="300px" width="200px" /><br />
+                    <img src={image} class="showImage" height="300px" width="200px" /><br />
                     <h3> Character Description</h3>
                     <p>{description}</p>
                     <h3>Hit Die</h3>

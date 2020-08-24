@@ -8,7 +8,7 @@ class Edit extends React.Component {
     return (
       <Default>
         <div>
-          <form action={`/classes/${id}/?_method=PUT`} method="POST">
+          <form action={`/createcharacter/${id}/?_method=PUT`} method="POST">
             <label htmlFor="class">Class Name:</label><input type="text" name="class" id="class" defaultValue={userclass} /><br />
             <label htmlFor="description">Description:</label><input type="text" name="description" id="description" defaultValue={description} /> <br />
             <label htmlFor="race">Race:</label><input type="text" name="race" id="race" defaultValue={race} /> <br />
@@ -17,7 +17,7 @@ class Edit extends React.Component {
             <label htmlFor="firstlevelspell">Level 1 Spell:</label><input type="text" name="firstlevelspell" id="firstlevelspell" defaultValue={firstlevelspell} /> <br />
             <label htmlFor="equipment">Equipment:</label><input type="text" name="equipment" id="equipment" defaultValue={equipment} /> <br />
             <label htmlFor="image">Image:</label><input type="text" name="image" id="image" defaultValue={username} /> <br />
-            <label htmlFor="username">2nd Cantrip:</label><input type="text" name="username" id="username" defaultValue="Enter your name here"/> <br />
+            <label htmlFor="username">Username</label><input type="text" name="username" id="username" defaultValue="Enter your name here"/> <br />
             <input type="submit" value="Edit Class" />
           </form>
         </div>

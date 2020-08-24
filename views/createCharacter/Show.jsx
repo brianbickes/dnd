@@ -8,7 +8,7 @@ class Show extends React.Component {
             <Default>
                 <div class="showCreateCharacter">
                     <h1>{userclass}</h1>
-                    <img src={image} className="Image" height="300px" width="200px" /><br />
+                    <img src={image} className="Image" height="300px" width="30%" /><br />
                     <h3>Backstory</h3>
                     <p>{description}</p>
                     <h3>Race</h3>
@@ -24,9 +24,9 @@ class Show extends React.Component {
                     <h3>Created By:</h3>
                     <p>{username}</p>
                     <a href={`/createcharacter/${_id}/edit`}>Edit</a>
-                    {/* <form action={`/classes/${_id}/?_method=DELETE`} method="POST">
-                            <input type="submit" value="Delete This Class" /> 
-                        </form> */}
+                    <form action={`/createcharacter/${_id}/?_method=DELETE`} method="POST">
+                            <input type="submit" value="Delete This Character" /> 
+                        </form>
                         {this.props.children}
                 </div>
             </Default>

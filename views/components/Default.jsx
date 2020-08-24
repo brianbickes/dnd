@@ -19,9 +19,10 @@ class Default extends React.Component {
                                 <a href="/classes">Classes</a>
                                 <a href="/races">Races</a>
                                 <a href="/spells">Spells</a>
-                                <a href="/equipment">Equipment</a>
+                                <a href="/equipment">Weapons</a>
                             </div>
                         </div>
+
                         <div class="dropdown">
                             <button class="dropbtn">Create</button>
                             <div class="dropdown-content">
@@ -41,7 +42,9 @@ class Default extends React.Component {
 
                     {this.props.children}
                     <footer>
-
+                        <div class="footer">
+                            <p>placeholder</p>
+                        </div>
                     </footer>
                 </body>
             </html>

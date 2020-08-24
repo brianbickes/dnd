@@ -7,21 +7,20 @@ const equipmentSchema = new Schema({
         required: true
     },
     type: {
-        type: Number,
+        type: String,
         required: true
     },
     description: {
         type: String,
         required: true
     },
-    cost: {
-        type: Number,
+    damage: {
+        type: String,
         required: true
     },
-    weight: {
-        type: Number,
-        required: true
-    },
+    image: {
+        type: String
+    }
 }, {
     timestamps: true
 });
