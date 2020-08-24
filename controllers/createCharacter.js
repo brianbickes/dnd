@@ -1,5 +1,5 @@
 const CreateCharacterRouter = require('express').Router();
-const CreateCharacter = require('../models/createcharacter');
+const CreateCharacter = require('../models/createCharacter');
 
 //INDEX
 CreateCharacterRouter.get('/', (req, res) => {
