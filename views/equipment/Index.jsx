@@ -5,12 +5,12 @@ class Index extends React.Component {
     render() {
         return (
             <Default>
-                <ul>
+                <div class="equipmentIndex">
                     {
                         this.props.equipment.map((equipment) => {
                             return (
                             <div key={equipment._id}>
-                                <span><img src={equipment.image} className="Image" height="300px" width="300px" /></span><br />
+                                <span><img class="weaponImage" src={equipment.image} className="Image" height="300px" width="300px" /></span><br />
                                 <h1><a href={`/equipment/${equipment._id}`}>{equipment.title}</a></h1>
                                 {/* <h3> Character Description</h3>
                         <p>{classes.description}</p>
@@ -26,7 +26,7 @@ class Index extends React.Component {
                             )
                         })
                     }
-                </ul>
+                </div>
             </Default>
         )
     }

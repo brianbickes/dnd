@@ -5,7 +5,7 @@ class Index extends React.Component {
     render() {
         return (
             <Default>
-                <ul>
+                <div class="raceIndex">
                     {
                         this.props.races.map((races) => {
                             return (
@@ -26,7 +26,7 @@ class Index extends React.Component {
                             )
                         })
                     }
-                </ul>
+                </div>
             </Default>
         )
     }

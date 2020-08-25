@@ -8,7 +8,7 @@ class Show extends React.Component {
             <Default>
                 <div class="showEquipmentContainer">
                     <h1 class="descriptor">{title}</h1>
-                    <img src={image} className="Image" height="300px" width="300px" /><br />
+                    <img class="weaponImage"src={image} className="Image" height="300px" width="300px" /><br />
                     <h3 class="type">Equipment Type</h3>
                     <p>{type}</p>
                     <h3 class="descriptor"> Equipment Description</h3>

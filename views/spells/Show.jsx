@@ -6,9 +6,9 @@ class Show extends React.Component {
         const { title, level, description, range, image, _id } = this.props.spells;
         return (
             <Default>
-                <div class="container">
+                <div class="spellShow">
                     <h1 class="descriptor">{title}</h1>
-                    <img src={image} className="Image" height="100px" width="100px" /><br />
+                    <img src={image} className="Image" height="200px" width="200px" /><br />
                     <h3 class="level">Spell Level</h3>
                     <p>{level}</p>
                     <h3 class="descriptor"> Spell Description</h3>

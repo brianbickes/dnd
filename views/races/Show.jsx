@@ -6,7 +6,7 @@ class Show extends React.Component {
         const { title, description, traits, image, _id } = this.props.races;
         return (
             <Default>
-                <div class="container">
+                <div class="showRace">
                     <h1 class="descriptor">{title}</h1>
                     <img src={image} className="Image" height="300px" width="200px" /><br />
                     <h3 class="descriptor"> Race Description</h3>

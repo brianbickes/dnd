@@ -9,7 +9,7 @@ class Index extends React.Component {
                     {
                         this.props.createcharacter.map((createCharacter) => {
                             return (
-                                <div key={createCharacter._id}>
+                                <div class="createIndex" key={createCharacter._id}>
                                     <div class="createCharacterClass">
                                         <span><img src={createCharacter.image} className="Image" height="300px" width="30%" /></span><br />
                                         <h1><a href={`/createcharacter/${createCharacter._id}`}>{createCharacter.name}</a></h1>

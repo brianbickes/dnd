@@ -43,9 +43,7 @@ class Default extends React.Component {
 
                     {this.props.children}
                     <footer>
-                        <div class="footer">
-                        <p class="footerText">Created by Brian Bickes</p>
-                        </div>
+                        <></>
                     </footer>
                     </div>
                 </body>

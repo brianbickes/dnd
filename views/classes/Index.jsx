@@ -9,8 +9,8 @@ class Index extends React.Component {
                     {
                         this.props.classes.map((classes) => {
                             return (
-                                <div key={classes._id}>
-                                    <div class="indexClass">
+                                <div class="classIndex" key={classes._id}>
+                                    <div>
                                         <span><img src={classes.image} className="Image" height="300px" width="200px" /></span><br />
                                         <h1><a href={`/classes/${classes._id}`}>{classes.title}</a></h1>
                                     </div>
