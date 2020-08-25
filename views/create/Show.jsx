@@ -9,22 +9,22 @@ class Show extends React.Component {
                 <div class="showCreateCharacter">
                     <h1>{name}</h1>
                     <img src={image} className="Image" height="300px" width="30%" /><br />
-                    <h3>Class</h3>
-                    <p>{userclass}</p>
-                    <h3>Backstory</h3>
-                    <p>{description}</p>
-                    <h3>Race</h3>
-                    <p>{race}</p>
-                    <h3>1st Cantrip</h3>
-                    <p>{cantrip1}</p>
-                    <h3>2nd Cantrip</h3>
-                    <p>{cantrip2}</p>
-                    <h3>Level 1 Spell</h3>
-                    <p>{firstlevelspell}</p>
-                    <h3>Equipment</h3>
-                    <p>{equipment}</p>
-                    <h3>Created By:</h3>
-                    <p>{username}</p>
+                    <p>Class</p>
+                    <h2>{userclass}</h2>
+                    <p>Backstory</p>
+                    <h2>{description}</h2>
+                    <p>Race</p>
+                    <h2>{race}</h2>
+                    <p>1st Cantrip</p>
+                    <h2>{cantrip1}</h2>
+                    <p>2nd Cantrip</p>
+                    <h2>{cantrip2}</h2>
+                    <p>Level 1 Spell</p>
+                    <h2>{firstlevelspell}</h2>
+                    <p>Equipment</p>
+                    <h2>{equipment}</h2>
+                    <p>Created By:</p>
+                    <h2>{username}</h2>
                     <a href={`/create/${_id}/edit`}>Edit</a>
                     <form action={`/create/${_id}/?_method=DELETE`} method="POST">
                             <input type="submit" value="Delete This Character" /> 
