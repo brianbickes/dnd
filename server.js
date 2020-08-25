@@ -40,7 +40,7 @@ const equipmentController = require('./controllers/equipment.js');
 app.use('/equipment', equipmentController); 
 
 //CREATE CHARACTER
-const createCharacterController = require('./controllers/createCharacter.js');
+const createCharacterController = require('./controllers/createcharacter.js');
 app.use('/createcharacter', createCharacterController); 
 
 
