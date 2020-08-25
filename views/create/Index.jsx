@@ -7,16 +7,16 @@ class Index extends React.Component {
             <Default>
                 
                     {
-                        this.props.createcharacter.map((createCharacter) => {
+                        this.props.create.map((create) => {
                             return (
-                                <div class="createIndex" key={createCharacter._id}>
-                                    <div class="createCharacterClass">
-                                        <span><img src={createCharacter.image} className="Image" height="300px" width="30%" /></span><br />
-                                        <h1><a href={`/createcharacter/${createCharacter._id}`}>{createCharacter.name}</a></h1>
-                            <h2>Created by {createCharacter.username}</h2>
+                                <div class="createIndex" key={create._id}>
+                                    <div class="createClass">
+                                        <span><img src={create.image} className="Image" height="300px" width="30%" /></span><br />
+                                        <h1><a href={`/create/${create._id}`}>{create.name}</a></h1>
+                            <h2>Created by {create.username}</h2>
                                     </div>
                                     {this.props.children}
-                                    {/* <h3> Character Description</h3>
+                                    {/* <h3>  Description</h3>
                         <p>{classes.description}</p>
                         <h3>Hit Die</h3>
                         <p>{classes.hitDie}</p>

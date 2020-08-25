@@ -27,8 +27,8 @@ class Default extends React.Component {
                         <div class="dropdown">
                             <button class="dropbtn">Create</button>
                             <div class="dropdown-content">
-                                <a href="/createcharacter">User Created Characters</a>
-                                <a href="/createcharacter/new">Create Your Own Character</a>
+                                <a href="/create">User Created Characters</a>
+                                <a href="/create/new">Create Your Own Character</a>
                             </div>
                         </div>
                         <div class="dropdown">

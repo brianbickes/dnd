@@ -40,8 +40,8 @@ const equipmentController = require('./controllers/equipment.js');
 app.use('/equipment', equipmentController); 
 
 //CREATE CHARACTER
-const createCharacterController = require('./controllers/createcharacter.js');
-app.use('/createcharacter', createCharacterController); 
+const createController = require('./controllers/create.js');
+app.use('/create', createController); 
 
 
 //STATIC PAGES

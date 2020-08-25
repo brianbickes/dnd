@@ -3,7 +3,7 @@ const Default = require('../components/Default');
 
 class Show extends React.Component {
     render() {
-        const { userclass, name, description, race, cantrip1, cantrip2, firstlevelspell, equipment, username, image, _id } = this.props.createcharacter;
+        const { userclass, name, description, race, cantrip1, cantrip2, firstlevelspell, equipment, username, image, _id } = this.props.create;
         return (
             <Default>
                 <div class="showCreateCharacter">
@@ -25,8 +25,8 @@ class Show extends React.Component {
                     <p>{equipment}</p>
                     <h3>Created By:</h3>
                     <p>{username}</p>
-                    <a href={`/createcharacter/${_id}/edit`}>Edit</a>
-                    <form action={`/createcharacter/${_id}/?_method=DELETE`} method="POST">
+                    <a href={`/create/${_id}/edit`}>Edit</a>
+                    <form action={`/create/${_id}/?_method=DELETE`} method="POST">
                             <input type="submit" value="Delete This Character" /> 
                         </form>
                         {this.props.children}

@@ -7,8 +7,8 @@ body {
     padding: 0;
     height: 100%;
     text-decoration: none;
-    /* box-shadow:
-        inset #474849  0 0 0 10px; */
+    box-shadow:
+        inset #474849  0 0 0 10px;
 }
 
 /*DEFAULT*/
@@ -36,7 +36,9 @@ padding: 50px 10px 10px 10px;
 text-align: center;
 font-size: 40px;
 };
-
+.home {
+  background-color: darkslategray;
+};
 .homeVideo {
 border: 2em; 
 }

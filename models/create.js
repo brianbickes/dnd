@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const createcharacterSchema = new Schema({
+const createSchema = new Schema({
     userclass: {
         type: String,
         required: true
@@ -45,7 +45,7 @@ username: {
     timestamps: true
 });
 
-const CreateCharacter = mongoose.model('CreateCharacter', createcharacterSchema);
+const Create = mongoose.model('Create', createSchema);
 
 //EXPORT ROUTER
-module.exports = CreateCharacter; 
+module.exports = Create; 
