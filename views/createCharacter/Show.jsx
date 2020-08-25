@@ -3,12 +3,14 @@ const Default = require('../components/Default');
 
 class Show extends React.Component {
     render() {
-        const { userclass, description, race, cantrip1, cantrip2, firstlevelspell, equipment, username, image, _id } = this.props.createcharacter;
+        const { userclass, name, description, race, cantrip1, cantrip2, firstlevelspell, equipment, username, image, _id } = this.props.createcharacter;
         return (
             <Default>
                 <div class="showCreateCharacter">
-                    <h1>{userclass}</h1>
+                    <h1>{name}</h1>
                     <img src={image} className="Image" height="300px" width="30%" /><br />
+                    <h3>Class</h3>
+                    <p>{userclass}</p>
                     <h3>Backstory</h3>
                     <p>{description}</p>
                     <h3>Race</h3>

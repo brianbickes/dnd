@@ -12,7 +12,7 @@ class Index extends React.Component {
                                 <div key={createCharacter._id}>
                                     <div class="createCharacterClass">
                                         <span><img src={createCharacter.image} className="Image" height="300px" width="30%" /></span><br />
-                                        <h1><a href={`/createcharacter/${createCharacter._id}`}>{createCharacter.userclass}</a></h1>
+                                        <h1><a href={`/createcharacter/${createCharacter._id}`}>{createCharacter.name}</a></h1>
                             <h2>Created by {createCharacter.username}</h2>
                                     </div>
                                     {this.props.children}

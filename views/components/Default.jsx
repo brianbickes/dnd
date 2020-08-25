@@ -10,6 +10,7 @@ class Default extends React.Component {
                     <title>Dungeons and Dragons</title>
                 </head>
                 <body>
+                    <div class="homeContainer">
                     <img class="titleImage" src="https://i.imgur.com/73abYGq.png" height="230" width="100%"></img>
                     <nav class="navBar">
                         <a class="dropbtn" href="/">Home</a>
@@ -43,9 +44,10 @@ class Default extends React.Component {
                     {this.props.children}
                     <footer>
                         <div class="footer">
-                            <p>placeholder</p>
+                        <p class="footerText">Created by Brian Bickes</p>
                         </div>
                     </footer>
+                    </div>
                 </body>
             </html>
         )

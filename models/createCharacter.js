@@ -6,6 +6,10 @@ const createcharacterSchema = new Schema({
         type: String,
         required: true
     },
+    name: {
+        type: String,
+        required: true
+    },
     race: {
         type: String,
         required: true

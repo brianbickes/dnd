@@ -8,7 +8,7 @@ class New extends React.Component {
                 <div>
                     <form class="newCreateCharacter" action="/createcharacter" method="POST">
                     <h1>New Character Page</h1>
-
+                    <label HTMLFor="name">Character Name</label><input type="text" name="name" id="name"></input><br />
                         <label HTMLFor="userclass">Class</label><select name="userclass" id="userclass" defaultValue="">
                             <optgroup label="Class">
                                 <option value="Barbarian">Barbarian</option>
