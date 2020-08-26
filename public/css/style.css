@@ -245,3 +245,7 @@ flex-basis: auto;
 .weaponImage {
   border-radius: 20%;
 }
+ indexTitle {
+   font-size: 100px;
+   color: black 
+ }

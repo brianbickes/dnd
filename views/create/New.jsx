@@ -170,7 +170,7 @@ class New extends React.Component {
                         </select><br />
                         <label HTMLFor="image">Image</label><input type="text" name="text" id="image"></input><br />
                         <label HTMLFor="username">Your name</label><input type="text" name="username" id="username" default="Enter your name here"></input><br />
-                        <input type="submit" value="Create Class"></input>
+                        <input type="submit" value="Create Character"></input>
                     </form>
                 </div>
             </Default>
